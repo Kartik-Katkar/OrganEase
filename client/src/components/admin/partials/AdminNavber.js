@@ -146,7 +146,7 @@ const AdminNavber = (props) => {
                   <span>Organs</span>
                 </span>
                 <span className="flex space-x-1 py-2 px-8 hover:bg-gray-400 cursor-pointer">
-                  <span>
+                  {/* <span>
                     <svg
                       className="w-6 h-6"
                       fill="none"
@@ -167,13 +167,13 @@ const AdminNavber = (props) => {
                         d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
                       />
                     </svg>
-                  </span>
-                  <span>Settings</span>
+                  </span> */}
+                  {/* <span>Settings</span>
                 </span>
                 <span
                   onClick={(e) => logout()}
                   className="flex space-x-1 py-2 px-8 hover:bg-gray-400 cursor-pointer"
-                >
+                > */}
                   <span>
                     <svg
                       className="w-6 h-6"

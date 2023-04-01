@@ -148,7 +148,7 @@ const EditProductModal = (props) => {
           <form className="w-full" onSubmit={(e) => submitForm(e)}>
             <div className="flex space-x-1 py-4">
               <div className="w-1/2 flex flex-col space-y-1 space-x-1">
-                <label htmlFor="name">Organ Name *</label>
+                <label htmlFor="name"> Time Window*</label>
                 <input
                   value={editformData.pName}
                   onChange={(e) =>
@@ -164,7 +164,7 @@ const EditProductModal = (props) => {
                 />
               </div>
               <div className="w-1/2 flex flex-col space-y-1 space-x-1">
-                <label htmlFor="price">Organ Price *</label>
+                <label htmlFor="price">PIN Code *</label>
                 <input
                   value={editformData.pPrice}
                   onChange={(e) =>
@@ -312,7 +312,7 @@ const EditProductModal = (props) => {
             </div>
             <div className="flex space-x-1 py-4">
               <div className="w-1/2 flex flex-col space-y-1">
-                <label htmlFor="quantity">Organ Availablity *</label>
+                <label htmlFor="quantity">Units Available *</label>
                 <input
                   value={editformData.pQuantity}
                   onChange={(e) =>
@@ -328,7 +328,7 @@ const EditProductModal = (props) => {
                   id="quantity"
                 />
               </div>
-              <div className="w-1/2 flex flex-col space-y-1">
+              {/* <div className="w-1/2 flex flex-col space-y-1">
                 <label htmlFor="offer">Product Offfer (%) *</label>
                 <input
                   value={editformData.pOffer}
@@ -344,7 +344,7 @@ const EditProductModal = (props) => {
                   className="px-4 py-2 border focus:outline-none"
                   id="offer"
                 />
-              </div>
+              </div> */}
             </div>
             <div className="flex flex-col space-y-1 w-full pb-4 md:pb-6 mt-4">
               <button

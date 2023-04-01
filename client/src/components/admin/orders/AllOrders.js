@@ -6,6 +6,8 @@ import { fetchData, editOrderReq, deleteOrderReq } from "./Actions";
 
 const apiURL = process.env.REACT_APP_API_URL;
 
+// Assuming pName is a number representing hours
+
 const AllCategory = (props) => {
   const { data, dispatch } = useContext(OrderContext);
   const { orders, loading } = data;
@@ -35,16 +37,18 @@ const AllCategory = (props) => {
       </div>
     );
   }
+  
+            
   return (
     <Fragment>
       <div className="col-span-1 overflow-auto bg-white shadow-lg p-4">
         <table className="table-auto border w-full my-2">
           <thead>
             <tr>
-              <th className="px-4 py-2 border">Organs</th>
+              <th className="px-4 py-2 border">PIN Code</th>
               <th className="px-4 py-2 border">Status</th>
-              <th className="px-4 py-2 border">Total</th>
-              <th className="px-4 py-2 border">Request Id</th>
+              {/* <th className="px-4 py-2 border">Expiration Time</th> */}
+              <th className="px-4 py-2 border">Organ ID</th>
               <th className="px-4 py-2 border">Hospital</th>
               <th className="px-4 py-2 border">Email</th>
               <th className="px-4 py-2 border">Phone</th>
@@ -90,9 +94,27 @@ const AllCategory = (props) => {
 /* Single Category Component */
 const CategoryTable = ({ order, editOrder }) => {
   const { dispatch } = useContext(OrderContext);
+// const createdAt = new Date(order.createdAt); // Convert createdAt to Date object
+//             const expirationDate = moment(createdAt).add(order.pName, 'hours'); // Calculate expiration date using moment.js
+//             const expirationTimeString = moment(expirationDate).format('LLL'); // Format expiration date into a string
+ 
+            
+// const currentTime = moment();
 
-  return (
+// if (expirationDate.isBefore(currentTime)) {
+//   // Display message indicating that the expiration time has passed
+//   console.log('Organ Expired');
+// } else {
+//   // Display the expiration time
+ 
+//   const expirationTimeString = moment(expirationDate).format('YYYY-MM-DD HH:mm:ss');
+
+//   console.log(`Your order will expire on ${expirationTimeString}.`);
+// }
+
+            return (
     <Fragment>
+      
       <tr className="border-b">
         <td className="w-48 hover:bg-gray-200 p-2 flex flex-col space-y-1">
           {order.allProduct.map((product, i) => {
@@ -103,8 +125,8 @@ const CategoryTable = ({ order, editOrder }) => {
                   src={`${apiURL}/uploads/products/${product.id.pImages[0]}`}
                   alt="productImage"
                 />
-                <span>{product.id.pName}</span>
-                <span>{product.quantitiy}x</span>
+                <span>{product.id.pPrice   }</span> 
+                {/* <span>{product.quantitiy}x</span> */}
               </span>
             );
           })}
@@ -115,7 +137,7 @@ const CategoryTable = ({ order, editOrder }) => {
               {order.status}
             </span>
           )}
-          {order.status === "Under Scutiny" && (
+          {order.status === "Under Scrutiny" && (
             <span className="block text-yellow-600 rounded-full text-center text-xs px-2 font-semibold">
               {order.status}
             </span>
@@ -136,9 +158,13 @@ const CategoryTable = ({ order, editOrder }) => {
             </span>
           )}
         </td>
-        <td className="hover:bg-gray-200 p-2 text-center">
-          {order.amount}
-        </td>
+        {/* <td className="hover:bg-gray-200 p-2 text-center"> */}
+          {/* {order.amount} */}
+ {/* {expirationTimeString} */}
+{/* add here  */}
+
+
+        {/* </td> */}
         <td className="hover:bg-gray-200 p-2 text-center">
           {order.transactionId}
         </td>
@@ -198,4 +224,4 @@ const CategoryTable = ({ order, editOrder }) => {
   );
 };
 
-export default AllCategory;
+export default AllCategory;

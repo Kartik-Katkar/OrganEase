@@ -70,8 +70,8 @@ class Auth {
                 name,
                 email,
                 password,
-                // ========= Here role 1 for Procurement Center signup role 0 for Hospital signup =========
-                userRole: 0, // Field Name change to userRole from role
+                // ========= Here role 1 for Procurement signup role 0 for Hospital signup =========
+                userRole: 1, // Field Name change to userRole from role
               });
               newUser
                 .save()

@@ -174,7 +174,7 @@ const ProductDetailsSection = (props) => {
           </div>
           <div className="col-span-2 mt-8 md:mt-0 md:col-span-4 md:ml-6 lg:ml-12">
             <div className="flex flex-col leading-8">
-              <div className="text-2xl tracking-wider">{sProduct.pName}</div>
+              <div className="text-2xl tracking-wider">{sProduct.pDescription}</div>
               <div className="flex justify-between items-center">
                 <span className="text-xl tracking-wider text-yellow-700">
                 PIN Code: {sProduct.pPrice}
@@ -215,9 +215,9 @@ const ProductDetailsSection = (props) => {
                 </span> */}
               </div>
             </div>
-            <div className="my-4 md:my-6 text-gray-600">
+            {/* <div className="my-4 md:my-6 text-gray-600">
               {sProduct.pDescription}
-            </div>
+            </div> */}
             <div className="my-4 md:my-6">
               {+quantitiy === +sProduct.pQuantity ? (
                 <span className="text-xs text-red-500">limited Organs</span>

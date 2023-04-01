@@ -140,7 +140,7 @@ const AddProductDetail = ({ categories }) => {
           <form className="w-full" onSubmit={(e) => submitForm(e)}>
             <div className="flex space-x-1 py-4">
               <div className="w-1/2 flex flex-col space-y-1 space-x-1">
-                <label htmlFor="name">Organ ID *</label>
+                <label htmlFor="name">Time Window *</label>
                 <input
                   value={fData.pName}
                   onChange={(e) =>

@@ -77,13 +77,13 @@ const AllProduct = (props) => {
         <table className="table-auto border w-full my-2">
           <thead>
             <tr>
-              <th className="px-4 py-2 border">Organ</th>
+              <th className="px-4 py-2 border">Expiration Deadline</th>
               <th className="px-4 py-2 border">Description</th>
               <th className="px-4 py-2 border">Image</th>
               <th className="px-4 py-2 border">Status</th>
               <th className="px-4 py-2 border">Available Count</th>
               <th className="px-4 py-2 border">Category</th>
-              <th className="px-4 py-2 border">Abnormality</th>
+              <th className="px-4 py-2 border">PIN Code</th>
               <th className="px-4 py-2 border">Created at</th>
               <th className="px-4 py-2 border">Updated at</th>
               <th className="px-4 py-2 border">Actions</th>
@@ -125,13 +125,33 @@ const AllProduct = (props) => {
 
 /* Single Product Component */
 const ProductTable = ({ product, deleteProduct, editProduct }) => {
+  const createdAt = new Date(product.createdAt); // Convert createdAt to Date object
+            const expirationDate = moment(createdAt).add(product.pName, 'hours'); // Calculate expiration date using moment.js
+            const expirationTimeString = moment(expirationDate).format('LLL'); // Format expiration date into a string
+            const currentTime = moment();
+            if (expirationDate.isBefore(currentTime)) {
+  // Display message indicating that the expiration time has passed
+  console.log('Organ Expired');
+  product.pStatus = "Disabled";
+} else {
+  // Display the expiration time
+ 
+  const expirationTimeString = moment(expirationDate).format('YYYY-MM-DD HH:mm:ss');
+
+  console.log(`Your order will expire on ${expirationTimeString}.`);
+}
+
+            
+// const currentTime = moment();
+
   return (
     <Fragment>
       <tr>
         <td className="p-2 text-left">
-          {product.pName.length > 15
+          {/* {product.pPrice.length > 15
             ? product.pDescription.substring(1, 15) + "..."
-            : product.pName}
+            : product.pPrice} */}
+             {expirationTimeString}
         </td>
         <td className="p-2 text-left">
           {product.pDescription.slice(0, 15)}...

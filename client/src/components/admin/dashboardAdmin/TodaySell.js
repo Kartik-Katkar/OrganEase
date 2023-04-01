@@ -37,7 +37,7 @@ const SellTable = () => {
         <table className="table-auto border w-full my-2">
           <thead>
             <tr>
-              <th className="px-4 py-2 border">Organ ID</th>
+              <th className="px-4 py-2 border">PIN Code</th>
               <th className="px-4 py-2 border">Image</th>
               <th className="px-4 py-2 border">Status</th>
               <th className="px-4 py-2 border">Request Address</th>
@@ -88,8 +88,8 @@ const TodayOrderTable = ({ order }) => {
           {order.allProduct.map((item, index) => {
             return (
               <div key={index} className="flex space-x-2">
-                <span>{item.id.pName}</span>
-                <span>{item.quantitiy}x</span>
+                <span>{item.id.pPrice}</span>
+                {/* <span>{item.quantitiy}x</span> */}
               </div>
             );
           })}

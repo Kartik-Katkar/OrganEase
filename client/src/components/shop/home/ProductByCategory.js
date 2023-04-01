@@ -65,7 +65,7 @@ const AllProduct = ({ products }) => {
                   />
                   <div className="flex items-center justify-between mt-2">
                     <div className="text-gray-600 font-light truncate">
-                      {item.pName}
+                      {item.pDescription}
                     </div>
                     <div className="flex items-center space-x-1">
                       {/* <span>
@@ -89,7 +89,7 @@ const AllProduct = ({ products }) => {
                       </span> */}
                     </div>
                   </div>
-                  <div>{item.pPrice}</div>
+                  <div>PIN Code: {item.pPrice}</div>
                   {/* <div className="absolute top-0 right-0 mx-2 my-2 md:mx-4">
                     <svg
                       className="w-5 h-5 md:w-6 md:h-6 cursor-pointer text-yellow-700"

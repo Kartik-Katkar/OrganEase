@@ -15,9 +15,9 @@ const TableHeader = () => {
           <th className="px-4 py-2 border">PIN Code</th>
           <th className="px-4 py-2 border">Phone</th>
           <th className="px-4 py-2 border">Address</th>
-          <th className="px-4 py-2 border">Request ID</th>
-          <th className="px-4 py-2 border">Request</th>
-          <th className="px-4 py-2 border">Processing</th>
+          {/* <th className="px-4 py-2 border">Organ ID</th> */}
+          <th className="px-4 py-2 border">Created At</th>
+          <th className="px-4 py-2 border">Updated At</th>
         </tr>
       </thead>
     </Fragment>
@@ -37,8 +37,11 @@ const TableBody = ({ order }) => {
                   src={`${apiURL}/uploads/products/${product.id.pImages[0]}`}
                   alt="productImage"
                 />
-                <span>{product.id.pName}</span>
-                <span>{product.quantitiy}x</span>
+                {/* <span>{product.id.pPrice}</span> */}
+                {/* <span>{product.quantitiy}x</span> */}
+                <td className="hover:bg-gray-200 p-2 text-center">
+          {order.transactionId}
+        </td>
               </span>
             );
           })}
@@ -49,17 +52,17 @@ const TableBody = ({ order }) => {
               {order.status}
             </span>
           )}
-          {order.status === "Processing" && (
+          {order.status === "Under Scrutiny" && (
             <span className="block text-yellow-600 rounded-full text-center text-xs px-2 font-semibold">
               {order.status}
             </span>
           )}
-          {order.status === "Shipped" && (
+          {order.status === "Request Accepted" && (
             <span className="block text-blue-600 rounded-full text-center text-xs px-2 font-semibold">
               {order.status}
             </span>
           )}
-          {order.status === "Delivered" && (
+          {order.status === "Expired" && (
             <span className="block text-green-600 rounded-full text-center text-xs px-2 font-semibold">
               {order.status}
             </span>
@@ -75,9 +78,7 @@ const TableBody = ({ order }) => {
         </td>
         <td className="hover:bg-gray-200 p-2 text-center">{order.phone}</td>
         <td className="hover:bg-gray-200 p-2 text-center">{order.address}</td>
-        <td className="hover:bg-gray-200 p-2 text-center">
-          {order.transactionId}
-        </td>
+      
         <td className="hover:bg-gray-200 p-2 text-center">
           {moment(order.createdAt).format("lll")}
         </td>

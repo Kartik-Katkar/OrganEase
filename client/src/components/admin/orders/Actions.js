@@ -53,17 +53,17 @@ export const filterOrder = async (
       );
       dispatch({ type: "fetchOrderAndChangeState", payload: newData });
       setDropdown(!dropdown);
-    } else if (type === "Processing") {
+    } else if (type === "Under Scrutiny") {
       newData = responseData.Orders.filter(
         (item) => item.status === "Processing"
       );
       dispatch({ type: "fetchOrderAndChangeState", payload: newData });
       setDropdown(!dropdown);
-    } else if (type === "Shipped") {
+    } else if (type === "Request Accepted") {
       newData = responseData.Orders.filter((item) => item.status === "Shipped");
       dispatch({ type: "fetchOrderAndChangeState", payload: newData });
       setDropdown(!dropdown);
-    } else if (type === "Delivered") {
+    } else if (type === "Expired") {
       newData = responseData.Orders.filter(
         (item) => item.status === "Delivered"
       );

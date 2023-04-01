@@ -187,11 +187,11 @@ const CheckoutProducts = ({ products }) => {
                     alt="wishListproduct"
                   />
                   <div className="text-lg md:ml-6 truncate">
-                    {product.pName}
+                    {product.pDescription}
                   </div>
-                  <div className="md:ml-6 font-semibold text-gray-600 text-sm">
+                  {/* <div className="md:ml-6 font-semibold text-gray-600 text-sm">
                     PIN Code: {product.pPrice}{" "}
-                  </div>
+                  </div> */}
                   <div className="md:ml-6 font-semibold text-gray-600 text-sm">
                     Units : {quantity(product._id)}
                   </div>

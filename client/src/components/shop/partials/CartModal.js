@@ -105,7 +105,7 @@ const CartModal = () => {
                           alt="cartProduct"
                         />
                         <div className="relative w-full flex flex-col">
-                          <div className="my-2">{item.pName}</div>
+                          <div className="my-2">{item.pDescription}</div>
                           <div className="flex items-center justify-between">
                             <div className="flex items-center justify-between space-x-2">
                               <div className="text-sm text-gray-400">
