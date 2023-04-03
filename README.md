@@ -34,7 +34,9 @@ npm run start
 ```
 
 
-Access the web app at http://localhost:3000/
+### Access the web app at http://localhost:3000/
+
+<hr>
 
 At its core, OrganEase is a secure database management system that enables individuals to register as organ donors or recipients. The site provides an intuitive user interface that facilitates the registration process, allowing users to easily input their information and preferences.
 
