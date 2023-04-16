@@ -25,16 +25,43 @@ cd server && npm install
 Open a terminal on server directory
 
 ```
-npm run start:dev
+npm start:dev
 ```
 
 and open another terminal on client directory
 ```
-npm run start
+npm start
 ```
 
 
 ### Access the web app at http://localhost:3000/
+
+<hr>
+### Screenshots
+
+<p align="center">
+  <img src="./Screenshots/1.jpeg" alt="image"/>
+</p>
+
+<p align="center">
+  <img src="./Screenshots/2.jpeg" alt="image"/>
+</p>
+
+<p align="center">
+  <img src="./Screenshots/3.jpeg" alt="image"/>
+</p>
+
+<p align="center">
+  <img src="./Screenshots/4.jpeg" alt="image"/>
+</p>
+
+<p align="center">
+  <img src="./Screenshots/5.jpeg" alt="image"/>
+</p>
+
+<p align="center">
+  <img src="./Screenshots/6.jpeg" alt="image"/>
+</p>
 
 <hr>
 
