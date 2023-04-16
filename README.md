@@ -4,7 +4,7 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Prerequisites
 
-NPM / Yarn and Node.js installed
+NPM  and Node.js installed
 
 ### Installing
 
@@ -65,11 +65,11 @@ npm start
 
 <hr>
 
-At its core, OrganEase is a secure database management system that enables individuals to register as organ donors or recipients. The site provides an intuitive user interface that facilitates the registration process, allowing users to easily input their information and preferences.
+As organs are needed ASAP for operations, time is the most crucial aspect. However, the existing method to request organs from procurement centre/ transplant centres is completely manual (manual data entry, manual communication via faxes, mails, phone calls) and thus is obviously error prone and time consuming. Therefore to solve this grave issue, 'OrganEase' is proposed. 
 
-In addition to registration, OrganEase also provides a range of features to help streamline the organ donation process. For example, the platform can be used to track organ donation requests, and has various algorithm applied to show the nearest organ and the organ which is about to expire.
+The website makes the tedious manual task of categorizing different organs and making entries for each, mere clicks away. In a particular region, say n number of procurement centres and/or transplant centres exist. All of them can display the organs stored in their hypothermic storages along with their details at one time (this completely solvesthe time-consuming problem of individually calling of procurement centres one by one which is done presently). 
 
-One of the key features of OrganEase is its emphasis on security and privacy. All user data is securely stored and encrypted, ensuring that sensitive information is protected at all times. This makes OrganEase an ideal platform for individuals who are concerned about the security of their personal information.
+Hospitals can request organs of suitable compatibility (Blood Group, etc) via the portal itself and make a payment which serves as a token of confirmation for the transfer procedure. Thereafter, the procurement confirms the request from their side. 
 
-Overall, OrganEase is a comprehensive and innovative organ donation management portal that makes it easier than ever for donors and recipients to connect. Whether you are a registered donor or someone in need of an organ transplant, OrganEase has the tools and features you need to manage your organ donation journey with ease.
+As organ transfer it a very delicate process, incase any unforeseen circumstance occurs there is a feature of manual override in which the status of organ can be changed.
 
