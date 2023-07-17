@@ -1,6 +1,6 @@
 ## OrganEase
 
-A joint effort by Kartik Katkar and Ojas Joshi
+A joint effort by [Kartik Katkar](https://github.com/Kartik-Katkar) and [Ojas Joshi](https://github.com/GagDrag)
 
 ## Getting Started
 
