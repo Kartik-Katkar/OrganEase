@@ -1,3 +1,7 @@
+## OrganEase
+
+A joint effort by [Ojas Joshi](https://github.com/GagDrag) and [Kartik Katkar](https://github.com/Kartik-Katkar)
+
 ## Getting Started
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purpose
