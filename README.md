@@ -7,7 +7,7 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Prerequisites
 
-NPM  and Node.js installed
+NPM and Node.js should be installed
 
 ### Installing
 
