@@ -16,8 +16,8 @@
     "react-scripts": "^3.4.4"
   },
   "scripts": {
-    "start": "npm start",
-    "build": "npm i",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
