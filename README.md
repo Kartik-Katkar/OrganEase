@@ -75,5 +75,5 @@ The website makes the tedious manual task of categorizing different organs and m
 
 Hospitals can request organs of suitable compatibility (Blood Group, etc) via the portal itself and make a payment which serves as a token of confirmation for the transfer procedure. Thereafter, the procurement confirms the request from their side. 
 
-As organ transfer it a very delicate process, incase any unforeseen circumstance occurs there is a feature of manual override in which the status of organ can be changed.
+Due to the intricate nature of organ transplantation, a manual override feature is available to modify the organ status in case of unexpected circumstances.
 
