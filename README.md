@@ -4,7 +4,7 @@ NPM and Node.js should be installed
 
 ### Installing
 
-Installing NPM modules on both client and server folders
+Steps for Installing NPM modules on both client and server folders
 
 Execute these commands from the project directory
 
