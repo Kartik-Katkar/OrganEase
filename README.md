@@ -30,7 +30,7 @@ npm start
 ```
 
 
-### Access the web app at http://localhost:3000/
+### Access the web app on your system at http://localhost:3000/
 
 <hr>
 
