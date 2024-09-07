@@ -1,6 +1,6 @@
 ### Prerequisites
 
-NPM and Node.js should be installed
+NPM and Node.js
 
 ### Installing
 
